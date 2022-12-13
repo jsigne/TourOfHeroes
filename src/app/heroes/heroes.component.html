@@ -1,1 +1,5 @@
-<h2>{{hero}}</h2>
+<h2>My Heroes</h2>
+
+<div *ngFor="let hero of heroes">
+  {{hero.id}} {{hero.name | uppercase}}
+</div>
