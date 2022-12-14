@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Hero } from '../hero'
 @Component({
   selector: 'app-hero-detail',
@@ -6,9 +6,6 @@ import { Hero } from '../hero'
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailsComponent{
-    hero: Hero = {
-      id: 1,
-      name: 'Windstorm'
-    };
+    @Input() hero?: Hero;
 
 }
